@@ -1,39 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Todo List</title>
 </head>
-
 <body>
     <h2>Todo List</h2>
     <script>
         var todo = [];
-
         function add_todo_item(new_item) {
             todo.push(new_item);
             console.log(todo);
         }
-
         function show_list() {
             for (var a = 0; a < todo.length; a = a + 1) {
                 console.log(todo[a]);
             }
-
         }
-
         function remove_todo_item(new_item) {
             console.log(todo.splice());
         }
-
         function edit_todo_item(new_item) {
             console.log(todo.splice());
         }
     </script>
-
 </body>
-
 </html>
